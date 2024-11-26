@@ -1,0 +1,157 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #FF91A4;
+    color: #333;
+}
+
+nav {
+    background-color: #000;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Section Styling */
+section {
+    min-height: calc(100vh - 60px); /* Subtract the height of the navigation bar */
+    padding-top: 60px; /* Match the height of the navigation bar */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    scroll-margin-top: 60px; /* Ensures smooth scrolling aligns correctly */
+}
+
+/* Home Section */
+.intro {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 30px;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 150px;
+    background-color: #ccc;
+    border-radius: 5px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.intro-text {
+    max-width: 600px;
+}
+
+.name {
+    color: #9e0e4c;
+}
+
+/* About Section */
+#about {
+    background: #f1f8e9;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Skills Section */
+.skill-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-box {
+    text-align: center;
+    width: 150px;
+}
+
+.skill-picture {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    margin: 0 auto 10px;
+    border-radius: 5px;
+}
+
+.skill-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Gallery Section */
+.gallery-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.gallery-picture {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gallery-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contacts Section */
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.contact-buttons button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #ff0059;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+}
+
+.contact-buttons button:hover {
+    background-color: #aa1e6d;
+}
